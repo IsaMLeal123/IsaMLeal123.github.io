@@ -47,3 +47,6 @@ header{
     background-color: var(--primary);
 }
 
+a img {
+    height: 100%;
+}
