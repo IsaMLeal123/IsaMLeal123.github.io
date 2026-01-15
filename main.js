@@ -5,6 +5,9 @@ document.querySelectorAll(".carousel").forEach(carousel =>{
     });
 
     carousel.insertAdjacentHTML("beforeend", `
+        <div class= "carousel-nav">
         
+        ${buttonsHtml.join("")}
+        </div>
         `);
 });
