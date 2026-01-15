@@ -61,6 +61,7 @@ nav {
 .container {
     max-width: 1280px;
     margin: auto;
+
 }
 
 /***************************** IMAGES *****************************/
@@ -99,31 +100,40 @@ nav {
 
 /***************************** BANNER CAROUSEL *****************************/
 
-.carousel img{
-    flex: 1 0 100%;
-    height: 35em;
-    scroll-snap-align: start;
-}
-
-.carousel-wrapper{
+.carousel{
     position: relative;
 }
 
-.carousel{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: var(--shadow-dark);
+.carousel img{
+    height: 40em;
+    }
+
+.carousel-item{
+    display: none;
+}
+.carousel-item-selected{
+    display: block;
 }
 
-.slider-nav{
-    display: flex;
-    column-gap: var(--space-2);
+.carousel-nav{
+    width: 100%;
+    padding: var(--space-2) 0;
     position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    bottom: var(--space-0);
+    left: var(--space-0);
+    text-align: center;
+}
 
+.carousel-button{
+    width: var(--space-2);
+    height: var(--space-2);
+    display: inline-block;
+    background-color: var(--muted-shade);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-button-selected{
+    background-color: var(--muted);
 }
