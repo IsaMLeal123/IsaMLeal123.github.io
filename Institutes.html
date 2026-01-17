@@ -6,7 +6,9 @@
     
     <link rel="stylesheet" href="style.css">
     
-    <title>Institute Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+    <title>Institutes Page</title>
 </head>
 <body>
     <header>
@@ -15,7 +17,7 @@
                 <button class="btn btn-primary"><a href="index.html">Home</a></button>
                 <button class="btn btn-primary"><a href="about.html">About</a></button>
                 <button class="btn btn-primary"><a href="contacts.html">Contacts</a></button>
-                <button class="btn btn-primary"><a href="institutes.html">Courses</a></button>
+                <button class="btn btn-primary"><a href="institutes.html">Institutes</a></button>
                 <button class="btn btn-primary"><a href="#" class="search"> <img src="images/Search-IconWhite.png" alt="search"></a></button>
         </nav>    
 
@@ -26,8 +28,35 @@
         </section>
     </header>
     
-    <main>
+    <main class="container">
 
+        <form>
+            <div class="search-bar">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="Search course by using key word...">
+            </div>
+        </form>
+
+        <h2 class="p-2 justify">Meet our Institutes:</h2>
+
+        <Section class="buttons-image">
+
+            <div class="button-list">
+                <button class="btn btn-secondary">Institute of Applied Sciences</button>
+                <button class="btn btn-secondary">Institute of business management and commerce</button>
+                <button class="btn btn-secondary">Institute of community services</button>
+                <button class="btn btn-secondary">Institute of engineering and transport</button>
+                <button class="btn btn-secondary">Institute of information and communication technology</button>
+                <button class="btn btn-secondary">Institute for the trades</button>
+                <button class="btn btn-secondary">Institute for the creative arts</button>
+            </div>
+
+            <div>
+                <img src="images/students-img.jpeg" alt="students">
+            </div>
+
+        </Section>
+        
     </main>
     <script src="main.js"></script>
 </body>
