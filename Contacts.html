@@ -23,6 +23,7 @@
     <main class="container">
 
         <h2 class="justify">Get in Contact with:</h2>
+       
         <Section class="buttons-image">
 
             <div class="button-list">
@@ -38,41 +39,53 @@
             <div>
                 <img src="images/students-img.jpeg" alt="students">
             </div>
-
         </Section>
 
+        <div class="break"></div>
 
         <section class="contact-container">
             
+            <h2 class="justify">Send a direct message to one of our Institutes:</h2>
+
             <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
             
-                <div>
-                    <label for="input-topic">Get in touch with:</label>
-                    <select name="topic" id="input-topic" required>
-                        <option value="" disabled selected> Choose an topic</option>
-                        <option value="I love coffee">I love coffee</option>
-                        <option value="I hate coffee">I hate coffee</option>
-                    </select>
-                </div>
+                <div class="justify">
+
+                    <div>
+                        <label for="input-topic">Institute:</label>
+                        
+                        <select name="topic" id="input-topic" required>
+                            <option value="" disabled selected> Choose an institute</option>
+                            <option value="Institute of Applied Sciences">Institute of Applied Sciences</option>
+                            <option value="Institute of business management and commerce">Institute of business management and commerce</option>
+                            <option value="Institute of community services">Institute of community services</option>
+                            <option value="Institute of engineering and transport">Institute of engineering and transport</option>
+                            <option value="Institute of information and communication technology">Institute of information and communication technology</option>
+                            <option value="Institute for the trades">Institute for the trades</option>
+                            <option value="Institute for the creative arts">Institute for the creative arts</option>
+                        </select>
+                    </div>
+
+
         
-        
                 <div>
-                    <label for="input-name">Name:</label>
-                    <input type="text" name="name" id="input-name" placeholder="Isabelle Leal" required minlength="8">
+                    <label for="input-name">Your Name:</label>
+                    <input type="text" name="name" id="input-name" placeholder="Isabelle Leal" required minlength="5">
                 </div>
             
                 <div>
-                    <label for="input-email">Email:</label>
-                    <input type="email" name="email" id="input-email" placeholder="email@example.com" required>
+                    <label for="input-email">Your Email:</label>
+                    <input type="email" name="email" id="input-email" placeholder="yourEmail@example.com" required>
                 </div>
         
                 <div>
                     <label for="input-message"> Your Message:</label>
-                    <textarea name="Message" id="input-message" placeholder="Your message here..." cols="30" rows="10" required minlength="20"></textarea>
+                    <textarea name="Message" id="input-message" placeholder="Your message here..." cols="30" rows="10" required minlength="10"></textarea>
                 </div>
-        
+                </div>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
             </form>
 
         </section>
@@ -82,6 +95,6 @@
     </main>
 
 
-    <!-- <div class="bottom-color"></div> -->
+    <div class="bottom-color"></div>
     </body>
 </html>
